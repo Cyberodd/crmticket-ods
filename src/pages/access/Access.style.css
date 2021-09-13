@@ -1,0 +1,12 @@
+.access-page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.jumbotron {
+    position: relative;
+ }
+ .form-box{
+     box-shadow: 6px, 5px, 15px, -5px black;
+ }
