@@ -1,10 +1,14 @@
 import './App.css'
 import { Access } from './pages/access/Access.pages';
+import { DefaultLayout } from "./layout/DefaultLayout";
 
 function App() {
   return (
     <div className="App">
-      <Access/>
+       {/*<Access/> */} 
+      <DefaultLayout>
+        Dashboard
+      </DefaultLayout>
     </div>
   );
 }
