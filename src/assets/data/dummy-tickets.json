@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "subject": "Weighbridge module not responding",
+        "status": "Client response pending",
+        "addedAt": "27-09-2020"
+    },
+
+    {
+        "id": 2,
+        "subject": "Module not responding",
+        "status": "Client response pending",
+        "addedAt": "1-11-2020"
+    },
+
+    {
+        "id": 3,
+        "subject": "Payroll module not responding",
+        "status": "Client response pending",
+        "addedAt": "23-11-2020"
+    },
+
+    {
+        "id": 4,
+        "subject": "Procurement module not responding",
+        "status": "Client response pending",
+        "addedAt": "23-12-2020"
+    },
+
+    {
+        "id": 5,
+        "subject": "Factory module not responding",
+        "status": "Client response pending",
+        "addedAt": "23-09-2021"
+    }
+]
