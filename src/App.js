@@ -2,7 +2,8 @@ import './App.css'
 //import { Access } from './pages/access/Access.pages';//
 import { DefaultLayout } from "./layout/DefaultLayout";
 //import { Dashboard } from './pages/dashboard/Dashboard.page';//
-import { AddTicket } from './assets/new-ticket/AddTicket.page';
+//import { AddTicket } from './assets/new-ticket/AddTicket.page';//
+import { TicketList } from "./pages/ticket-list/TicketList.page";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
        {/*<Access/> */} 
       <DefaultLayout>
        {/* <Dashboard /> */}
-        <AddTicket />
+       {/*<AddTicket /> */}
+       <TicketList/>
       </DefaultLayout>
     </div>
   );
