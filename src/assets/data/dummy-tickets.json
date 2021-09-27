@@ -3,7 +3,25 @@
         "id": 1,
         "subject": "Weighbridge module not responding",
         "status": "Client response pending",
-        "issueDate": "27-09-2020"
+        "issueDate": "27-09-2020",
+        "history": [
+            {"date": "4-6-2021",
+                "message": "ttyltldr",
+                "messageBy": "Nemanja"
+            },
+            {"date": "4-6-2021",
+                "message": "ttyltldr",
+                "messageBy": "client"
+            },
+            {"date": "4-6-2021",
+                "message": "ttyltldr",
+                "messageBy": "ops"
+            },
+            {"date": "4-6-2021",
+                "message": "ttyltldr",
+                "messageBy": "Dev"
+            }
+        ]
     },
 
     {
