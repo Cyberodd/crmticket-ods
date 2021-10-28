@@ -1,10 +1,16 @@
 import React from "react";
 import { Form, Jumbotron, Col, Button } from "react-bootstrap";
 import { PropTypes } from "prop-types";
-import "./add-ticket-form.style.css"
+import "./add-ticket-form.style.css";
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
 
-export const AddTicketForm = ({handleOnSubmit, handleOnChange, formDt}) => {
+export const AddTicketForm = ({handleOnSubmit, handleOnChange, handleOnSelect, formDt}) => {
 
+    const options = [
+        'Weighbridge module', 'Farm module', 'Factory module', 'Scale'
+      ];
+    const defaultOption = options[0];
     console.log(formDt);
     return(
         <Jumbotron className= "mt-3 add-new-ticket bg-light">
@@ -14,12 +20,11 @@ export const AddTicketForm = ({handleOnSubmit, handleOnChange, formDt}) => {
                 <Form.Group>
                     <Form.Label column sm={3}>Subject</Form.Label>
                     <Col sm={9}>
-                    <Form.Control
-                    name= "subject"
-                    value= {formDt.subject}
-                    onChange={handleOnChange}
-                    placeholder= "Subject"
-                    required
+                    <Dropdown
+                    options={options} 
+                    onChange={handleOnSelect} 
+                    value={defaultOption} 
+                    placeholder="Select an option"
                     /></Col>
                 </Form.Group>
                 <Form.Group>
@@ -55,6 +60,7 @@ export const AddTicketForm = ({handleOnSubmit, handleOnChange, formDt}) => {
 
 AddTicketForm.propTypes = {
     handleOnSubmit: PropTypes.func.isRequired, 
-    handleOnChange: PropTypes.func.isRequired, 
+    handleOnChange: PropTypes.func.isRequired,
+    handleOnSelect: PropTypes.func.isRequired, 
     formDt: PropTypes.object.isRequired
 }

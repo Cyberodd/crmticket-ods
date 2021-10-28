@@ -48,7 +48,7 @@
     {
         "id": 5,
         "subject": "Factory module not responding",
-        "status": "Client response pending",
+        "status": "Client response pending", 
         "issueDate": "23-09-2021"
     }
 ]
